@@ -295,12 +295,13 @@
             // 
             // BTN_Cancel_Test
             // 
-            this.BTN_Cancel_Test.Location = new System.Drawing.Point(558, 651);
+            this.BTN_Cancel_Test.Location = new System.Drawing.Point(536, 651);
             this.BTN_Cancel_Test.Name = "BTN_Cancel_Test";
             this.BTN_Cancel_Test.Size = new System.Drawing.Size(176, 43);
             this.BTN_Cancel_Test.TabIndex = 3;
             this.BTN_Cancel_Test.Text = "Cancel Test";
             this.BTN_Cancel_Test.UseVisualStyleBackColor = true;
+            this.BTN_Cancel_Test.Click += new System.EventHandler(this.BTN_Cancel_Test_Click);
             // 
             // BTN_Stop_Data_Collection
             // 
@@ -310,6 +311,7 @@
             this.BTN_Stop_Data_Collection.TabIndex = 2;
             this.BTN_Stop_Data_Collection.Text = "Stop Data Collection";
             this.BTN_Stop_Data_Collection.UseVisualStyleBackColor = true;
+            this.BTN_Stop_Data_Collection.Click += new System.EventHandler(this.BTN_Stop_Data_Collection_Click);
             // 
             // BTN_Start_Data_Collection
             // 
@@ -319,6 +321,7 @@
             this.BTN_Start_Data_Collection.TabIndex = 1;
             this.BTN_Start_Data_Collection.Text = "Start Data Collection";
             this.BTN_Start_Data_Collection.UseVisualStyleBackColor = true;
+            this.BTN_Start_Data_Collection.Click += new System.EventHandler(this.BTN_Start_Data_Collection_Click);
             // 
             // textBox2
             // 

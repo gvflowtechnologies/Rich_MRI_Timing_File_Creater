@@ -21,7 +21,7 @@ namespace Rich_MRI_Timing_File_Creater
 
     public partial class FM_MRI_TIming_File_Main : Form
     {
-       // SessionState CurrentSessionState = SessionState.Subject_Data_Entry;
+        SessionState CurrentSessionState;
         public FM_MRI_TIming_File_Main()
         {
             InitializeComponent();
@@ -32,6 +32,7 @@ namespace Rich_MRI_Timing_File_Creater
         {
             this.KeyPreview = true;
             this.KeyPress+= Key_Keydown;
+            CurrentSessionState = SessionState.Subject_Data_Entry;
         }
 
         void Key_Keydown(object sender, System.Windows.Forms.KeyPressEventArgs  e)
@@ -45,5 +46,21 @@ namespace Rich_MRI_Timing_File_Creater
 
         }
 
+        private void BTN_Start_Data_Collection_Click(object sender, EventArgs e)
+        {
+            // S
+            CurrentSessionState = SessionState.Subject_Data_Entry;
+
+        }
+
+        private void BTN_Stop_Data_Collection_Click(object sender, EventArgs e)
+        {
+            CurrentSessionState = SessionState.Wait_ForNext_Session;
+        }
+
+        private void BTN_Cancel_Test_Click(object sender, EventArgs e)
+        {
+            CurrentSessionState = SessionState.Wait_ForNext_Session;
+        }
     }
 }
